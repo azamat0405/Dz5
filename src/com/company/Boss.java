@@ -3,17 +3,21 @@ package com.company;
 public class Boss {
     private int bossHealth;
     private double bossDamage;
-    private String bossDeffenceType;
+    private String typeOfProtection;
 
     public Boss(int bossHealth, double bossDamage, String bossDeffenceType) {
         this.bossHealth = bossHealth;
         this.bossDamage = bossDamage;
-        this.bossDeffenceType = bossDeffenceType;
+        this.typeOfProtection = bossDeffenceType;
 
     }
 
     public void printInfo() {
-        System.out.println(bossHealth + bossDamage + bossDeffenceType);
+        System.out.println("-------------------\n" +
+                "Жизнь" +getBossHealth() + "\n"
+                + "Атака" + getBossDamage() + "\n"
+                + "Урон" +  getBossHealth() + "\n" +
+                "---------------------------------");
 
     }
 
@@ -29,7 +33,7 @@ public class Boss {
 
     public String getBossDeffenceType() {
 
-        return bossDeffenceType;
+        return typeOfProtection;
 
     }
 
